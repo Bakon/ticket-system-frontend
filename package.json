@@ -1,5 +1,10 @@
 {
     "name": "groceries-list",
+    "description": "groceries-list-app",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/julicolo/groceries-list-frontend.git"
+    },
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
@@ -8,16 +13,20 @@
         "build": "webpack --mode production"
     },
     "dependencies": {
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "@types/react-router-dom": "^5.1.3",
+        "@types/styled-components": "^5.0.1",
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "react-router-dom": "^5.1.2",
+        "styled-components": "^5.0.1"
     },
     "devDependencies": {
         "@babel/core": "^7.8.3",
         "@babel/plugin-transform-typescript": "^7.8.3",
         "@babel/preset-env": "^7.8.3",
         "@babel/preset-react": "^7.8.3",
-        "@types/react": "^16.9.17",
-        "@types/react-dom": "^16.9.4",
         "file-loader": "^5.0.2",
         "source-map-loader": "^0.2.4",
         "ts-loader": "^6.2.1",
