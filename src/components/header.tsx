@@ -7,6 +7,9 @@ export default function Header() {
         <StyledHeader>
             <div className="left-side">
                 <img src="assets/icons/menu.svg" alt="menu icon" />
+                <a href="/">
+                    <h2>GG</h2>
+                </a>
             </div>
             <div className="right-side">
                 <a href="/login">Login</a>
@@ -26,10 +29,23 @@ const StyledHeader = styled.header`
     background: ${colors.main};
     padding: 0 ${spacing.extraLarge};
 
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: ${colors.white};
+        }
+    }
+
     .left-side {
         display: flex;
+        align-items: center;
         height: 100%;
         width: 100%;
+
+        > img {
+            margin-right: ${spacing.extraLarge};
+        }
     }
 
     .right-side {
