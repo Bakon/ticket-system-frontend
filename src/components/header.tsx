@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
-import {colors, spacing, headerHeight} from '../../css-util';
+import {colors, spacing, headerHeight} from '../css-util';
 
 export default function Header() {
     return (
@@ -10,8 +9,8 @@ export default function Header() {
                 <img src="assets/icons/menu.svg" alt="menu icon" />
             </div>
             <div className="right-side">
-                <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
             </div>
         </StyledHeader>
     );
