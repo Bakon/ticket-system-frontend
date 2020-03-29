@@ -1,5 +1,15 @@
-import React from 'react';
+import * as React from 'react';
 
-export default function Main() {
-    return <h1>Hello world</h1>;
+interface State {
+    name: string;
+}
+
+export default class Main extends React.Component<{}, State> {
+    public state = {
+        name: 'Julio',
+    };
+
+    public render() {
+        return <h1>Hello world</h1>;
+    }
 }
