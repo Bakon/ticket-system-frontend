@@ -26,7 +26,6 @@
         "no-useless-constructor": "error",
         "no-useless-rename": "error",
         "prefer-arrow-callback": "warn",
-        "prefer-rest-params": "warn",
-        "@typescript-eslint/no-var-requires": "off"
+        "prefer-rest-params": "warn"
     }
 }
