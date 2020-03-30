@@ -1,5 +1,5 @@
-import * as path from 'path';
-import * as webpack from 'webpack';
+import webpack from 'webpack';
+import path from 'path';
 
 const config: webpack.Configuration = {
     resolve: {
@@ -21,12 +21,11 @@ const config: webpack.Configuration = {
         rules: [
             {
                 test: /\.ts(x?)$/,
-                exclude: /node_modules/,
                 loader: 'ts-loader',
             },
             {
-                test: /\.(png|svg|jpg|gif)$/i,
-                use: 'file-loader',
+                test: /\.svg$/,
+                use: '@svgr/webpack',
             },
             {
                 enforce: 'pre',

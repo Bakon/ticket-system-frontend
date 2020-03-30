@@ -1,6 +1,5 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import {createGlobalStyle} from 'styled-components';
 import Main from './components/';
 
@@ -22,9 +21,9 @@ const GlobalStylesheet = createGlobalStyle`
 `;
 
 ReactDOM.render(
-    <BrowserRouter>
+    <React.Fragment>
         <GlobalStylesheet />
         <Main />
-    </BrowserRouter>,
+    </React.Fragment>,
     document.getElementById('root')
 );

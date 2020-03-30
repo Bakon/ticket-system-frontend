@@ -27,7 +27,6 @@
         "no-useless-rename": "error",
         "prefer-arrow-callback": "warn",
         "prefer-rest-params": "warn",
-        "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-var-requires": "off"
     }
 }
