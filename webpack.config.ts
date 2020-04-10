@@ -13,8 +13,11 @@ const config: webpack.Configuration = {
     },
     entry: path.resolve(__dirname, 'src', 'index.tsx'),
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist/',
+        path: path.resolve(
+            __dirname,
+            process.env.NODE_ENV === 'production' ? '/public/' : 'dist'
+        ),
+        publicPath: process.env.NODE_ENV === 'production' ? '/public/' : '/dist/',
         filename: 'bundle.js',
     },
     module: {

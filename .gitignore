@@ -3,3 +3,8 @@
 
 # Dependency directories
 node_modules
+
+# Output files
+.now
+dist
+build
